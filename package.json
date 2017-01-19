@@ -1,0 +1,32 @@
+{
+  "name": "gulp-build",
+  "version": "1.0.0",
+  "description": "Project using Gulp to build a front end website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darindieckhoff/gulp-build.git"
+  },
+  "keywords": [
+    "gulp"
+  ],
+  "author": "Darin Dieckhoff",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/darindieckhoff/gulp-build/issues"
+  },
+  "homepage": "https://github.com/darindieckhoff/gulp-build#readme",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.0",
+    "gulp-uglify": "^2.0.0"
+  }
+}
