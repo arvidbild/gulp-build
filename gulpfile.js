@@ -31,7 +31,7 @@ var dist = {
 
 //---lints .js files and stops build on error
 gulp.task('eslint', function () {
-  return gulp.src(['/**/*.js', '!node_modules/**'])
+  return gulp.src(['./**/*.js', '!node_modules/**'])
     .pipe(eslint())
     .pipe(eslint.format())
     .pipe(eslint.failOnError());
@@ -91,7 +91,7 @@ gulp.task('clean', function () {
 
 //---build task that runs scripts, styles, and images tasks. Moves icons folder to dist directory
 gulp.task('build', function () {
-  runsequence('clean','scripts', 'styles', 'images');
+  runsequence('clean', 'scripts', 'styles', 'images');
   gulp.src(paths.icons)
   .pipe(gulp.dest(dist.icons));
 });
