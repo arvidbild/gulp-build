@@ -31,7 +31,7 @@ var dist = {
 
 //---lints .js files and stops build on error
 gulp.task('eslint', function () {
-  return gulp.src(['./**/*.js', '!node_modules/**'])
+  return gulp.src(['js/**/*.js', '!node_modules/**'])
     .pipe(eslint())
     .pipe(eslint.format())
     .pipe(eslint.failOnError());
@@ -97,4 +97,4 @@ gulp.task('build', function () {
 });
 
 //---sets build as default gulp task and runs clean task prior to build
-gulp.task('default', ['build'], function () {});
+gulp.task('default', ['build']);
